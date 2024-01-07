@@ -18,38 +18,37 @@ int addDigits(int num){
     // check if the number is not zero
     if(num > 0) {
         while(num > 0) {
+
             digit = num % 10;
             sum += digit;
 
-
             num = num / 10;
          
-            
-            if(num <= 0 && (sum%10) != sum) {
+            // if(num <= 0 && (sum%10) != sum) {
+            if(sum > 9) { // by our TA in DSA batch
                 num = sum;
                 sum = 0;
-            }
-         
-            
+            }   
+           
         }
-        // cout<<sum%10<<endl;
-        // cout<<"sum check after loop : "<<((sum%10) == sum)<<" sum value is "<<sum<<endl;
-        // cout<<"number after loop: "<<num<<endl;
-        return sum;
-     
+          
+       
     }
-
-
+     return sum;
 };
+
+
+
 
 int main() {
 
     cout<<"function answr: "<<addDigits(38)<<endl;
-    cout<<"function answr: "<<addDigits(89)<<endl;
-    cout<<"function answr: "<<addDigits(9866)<<endl;
-    cout<<"function answr: "<<addDigits(8)<<endl;
-    cout<<"function answr: "<<addDigits(2)<<endl;
-    cout<<"function answr: "<<addDigits(1)<<endl;
+    cout<<"function answr: "<<addDigits(41)<<endl;
+    // cout<<"function answr: "<<addDigits(89)<<endl;
+    // cout<<"function answr: "<<addDigits(96)<<endl;
+    // cout<<"function answr: "<<addDigits(8)<<endl;
+    // cout<<"function answr: "<<addDigits(2)<<endl;
+    // cout<<"function answr: "<<addDigits(1)<<endl;
     // cout<<"function answr: "<<addDigits(0)<<endl;
 
     return 0;
