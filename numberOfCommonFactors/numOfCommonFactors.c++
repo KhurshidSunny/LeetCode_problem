@@ -12,9 +12,6 @@ int commonFactors(int a, int b) {
 }
 
 
-
-
-
 int main() {
     cout<<commonFactors(12, 6)<<endl;
     cout<<commonFactors(25, 30)<<endl;
