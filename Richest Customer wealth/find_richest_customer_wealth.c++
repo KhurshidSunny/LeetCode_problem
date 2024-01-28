@@ -9,6 +9,8 @@ int main() {
         {2,8,7},
         {7,1,3},
         {1,9,5}
+
+       
     };
 
     int row_size = sizeof(accounts)/sizeof(accounts[0]);
