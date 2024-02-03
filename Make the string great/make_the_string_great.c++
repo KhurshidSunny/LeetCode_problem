@@ -22,13 +22,11 @@ int main() {
         int j=0;
         flag = false;
         for(int i = 0; i < n; i++) {
-            //  101-32=69 != 69
-            
+
             if(i+1 < n && (s[i]-32 == s[i+1] || s[i]+32 == s[i+1]) ) {
                 i++;
                 flag=true;
-            }
-            
+            }     
             else {
                 s[j] = s[i];
                 j++;
